@@ -16,7 +16,7 @@ const config = {
   width: 640, // Sollten möglichst vielfache von 32 sein, da unsere Tileset 32x32 Pixel gross sind.
   height: 480, // Gleich wie bei width.
   parent: "game-canvas", // Die ID von dem HTML-Element, in das das Spiel gezeichnet wird.
-  scene: [LoadingScene], // Die Szenen des Spiels, hier können noch weitere Szenen angehängt werden.
+  scene: [LoadingScene, level00], // Die Szenen des Spiels, hier können noch weitere Szenen angehängt werden.
   physics: {
     default: "arcade", // Eine einfache Physik die auf kollisionen testen kann.
     arcade: {
