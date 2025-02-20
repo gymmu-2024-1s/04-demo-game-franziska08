@@ -75,6 +75,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       if (isIdle) this.anims.play("player_right", true)
       isIdle = false
     }
+    if (up.isDown) {
+      this.body.setVelocityX(this.speed)
+      if (isIdle) this.anims.play("player_up", true)
+      isIdle = false
+    }
 
     // Falls der Spieler nach all den Checks noch ruhig ist, spiele die "player_idle" Animation ab.
     if (isIdle) {
